@@ -1,0 +1,82 @@
+export const planets = [
+  {
+    id: 'mercury', name: 'Mercury', category: 'Terrestrial', order: '01',
+    color: '#b5a28d', diameterKm: 4879, distanceFromSunKm: 57900000, orbitalPeriodDays: 88,
+    rotationPeriod: '58.6 Earth days', gravity: '3.7 m/s²', temperature: '−180 to 430 °C (surface)',
+    moons: '0 known', atmosphere: 'A very thin exosphere, mostly oxygen, sodium, hydrogen, helium, and potassium.',
+    composition: 'A large metallic core beneath a rocky mantle and crust.',
+    description: 'A small, cratered world racing around the Sun in just 88 days.',
+    fact: 'Mercury experiences the most extreme temperature swings of any planet in our solar system.',
+  },
+  {
+    id: 'venus', name: 'Venus', category: 'Terrestrial', order: '02',
+    color: '#e5b878', diameterKm: 12104, distanceFromSunKm: 108200000, orbitalPeriodDays: 224.7,
+    rotationPeriod: '243 Earth days (retrograde)', gravity: '8.87 m/s²', temperature: 'About 465 °C (mean surface)',
+    moons: '0 known', atmosphere: 'Dense carbon dioxide atmosphere with sulfuric acid clouds.',
+    composition: 'Rocky planet with a central iron core and volcanic surface.',
+    description: 'A brilliant, cloud-veiled planet with a crushing atmosphere and a scorching surface.',
+    fact: 'Venus rotates backward compared with most planets, and its day is longer than its year.',
+  },
+  {
+    id: 'earth', name: 'Earth', category: 'Terrestrial', order: '03',
+    color: '#6eb8d4', diameterKm: 12742, distanceFromSunKm: 149600000, orbitalPeriodDays: 365.256,
+    rotationPeriod: '23 h 56 min', gravity: '9.81 m/s²', temperature: 'About 15 °C (global mean surface)',
+    moons: '1 known', atmosphere: 'Nitrogen and oxygen, with trace water vapor and other gases.',
+    composition: 'Rocky world with liquid water on the surface and an iron-rich core.',
+    description: 'Our pale blue home: the only world currently known to support life.',
+    fact: 'Liquid water covers about 71% of Earth’s surface.',
+  },
+  {
+    id: 'mars', name: 'Mars', category: 'Terrestrial', order: '04',
+    color: '#cf795f', diameterKm: 6779, distanceFromSunKm: 227900000, orbitalPeriodDays: 687,
+    rotationPeriod: '24 h 37 min', gravity: '3.71 m/s²', temperature: 'About −65 °C (mean surface)',
+    moons: '2 known', atmosphere: 'Thin atmosphere composed mostly of carbon dioxide.',
+    composition: 'Rocky, iron-oxide-rich surface with polar ice caps and a small core.',
+    description: 'A cold desert world shaped by ancient rivers, volcanoes, and dust storms.',
+    fact: 'Olympus Mons on Mars is the tallest known volcano in the solar system.',
+  },
+  {
+    id: 'jupiter', name: 'Jupiter', category: 'Gas Giant', order: '05',
+    color: '#d9a77f', diameterKm: 139820, distanceFromSunKm: 778600000, orbitalPeriodDays: 4332.59,
+    rotationPeriod: '9 h 56 min', gravity: '24.79 m/s²', temperature: 'About −110 °C (cloud tops)',
+    moons: '95 known (count can change)', atmosphere: 'Mostly hydrogen and helium, with ammonia and water clouds.',
+    composition: 'Hydrogen-rich gas giant; no well-defined solid surface.',
+    description: 'A colossal gas giant whose swirling storms dwarf the entire Earth.',
+    fact: 'Jupiter’s Great Red Spot is a long-lived storm wider than Earth.',
+  },
+  {
+    id: 'saturn', name: 'Saturn', category: 'Gas Giant', order: '06',
+    color: '#e8c98d', diameterKm: 116460, distanceFromSunKm: 1433500000, orbitalPeriodDays: 10759.22,
+    rotationPeriod: 'About 10 h 33 min', gravity: '10.44 m/s²', temperature: 'About −140 °C (cloud tops)',
+    moons: '146 known (count can change)', atmosphere: 'Mostly hydrogen and helium with cloud layers and seasonal storms.',
+    composition: 'Gas giant surrounded by a broad system of icy and rocky rings.',
+    description: 'An elegant giant wrapped in rings made from countless pieces of ice and rock.',
+    fact: 'Saturn’s rings span up to about 282,000 km across, but are typically only tens of meters thick.',
+  },
+  {
+    id: 'uranus', name: 'Uranus', category: 'Ice Giant', order: '07',
+    color: '#87d5d2', diameterKm: 50724, distanceFromSunKm: 2872500000, orbitalPeriodDays: 30688.5,
+    rotationPeriod: '17 h 14 min (retrograde)', gravity: '8.69 m/s²', temperature: 'About −195 °C (mean atmosphere)',
+    moons: '28 known (count can change)', atmosphere: 'Hydrogen and helium with methane, which absorbs red light.',
+    composition: 'An ice giant with a hot, dense interior rich in water, ammonia, and methane.',
+    description: 'A distant blue-green ice giant that rolls around the Sun on its side.',
+    fact: 'Uranus has an axial tilt of about 98 degrees, giving it unusually extreme seasons.',
+  },
+  {
+    id: 'neptune', name: 'Neptune', category: 'Ice Giant', order: '08',
+    color: '#668bea', diameterKm: 49244, distanceFromSunKm: 4495100000, orbitalPeriodDays: 60182,
+    rotationPeriod: 'About 16 h', gravity: '11.15 m/s²', temperature: 'About −200 °C (mean atmosphere)',
+    moons: '16 known (count can change)', atmosphere: 'Hydrogen and helium with methane and traces of other gases.',
+    composition: 'An ice giant with a dense core and deep atmosphere.',
+    description: 'A deep-blue world at the solar system’s edge, swept by supersonic winds.',
+    fact: 'Neptune takes about 165 Earth years to complete one orbit around the Sun.',
+  },
+]
+
+export const categories = ['All Worlds', 'Terrestrial', 'Gas Giant', 'Ice Giant']
+
+export const discoveries = [
+  { title: 'The Pillars of Creation', kind: 'NEBULA · EAGLE NEBULA', text: 'Sculpted columns of gas and dust where new stars take shape, captured in extraordinary detail by the James Webb Space Telescope.', visual: 'pillars' },
+  { title: 'A galaxy in motion', kind: 'GALAXY · DEEP SPACE', text: 'Billions of stars, vast clouds of gas, and dark matter bound together across unimaginable distances.', visual: 'galaxy' },
+  { title: 'Where light cannot escape', kind: 'BLACK HOLE · EXTREME PHYSICS', text: 'A region of spacetime with gravity so intense that even light cannot cross its event horizon and return.', visual: 'blackhole' },
+]
